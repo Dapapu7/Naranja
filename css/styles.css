@@ -2,11 +2,25 @@ body{
     background-color: rgb(247, 221, 175);
 }
 
+.enlaces{
+    font-family: 'Anton', sans-serif;
+    font-size: 26px;
+}
+
 a{
     text-decoration:none ;
-    color: rgb(117, 99, 65);
+    color: rgb(119, 77, 0);
 }
+
 ul{
     list-style-type: none;
-
 }
+
+ li{
+     margin-top: 10px;
+ }
+
+ h3{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 22px;
+ }
