@@ -64,3 +64,23 @@ ul{
     transition: font-size 0.7s ease;
 }
 
+.page-link{
+    background-color: rgb(199, 112, 30);
+    font-size: 20px;
+    color: rgb(235, 188, 117);
+    font-family:Impact;
+    appearance: none;
+}
+
+.page-link:hover{
+    background-color: rgb(107, 61, 18);
+    color: rgb(235, 188, 117);
+    font-family:Impact;
+    transition: background-color 1.3s ease;
+}
+
+h2{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
