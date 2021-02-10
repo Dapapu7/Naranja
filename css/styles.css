@@ -48,6 +48,19 @@ ul{
 }
 
 .boton{
-    background-color: black;
+    background-color: rgb(199, 112, 30);
     font-size: 30px;
+    color: rgb(235, 188, 117);
+    font-family:Impact;
+    appearance: none;
 }
+
+.boton:hover{
+    background-color: rgb(107, 61, 18);
+    color: rgb(235, 188, 117);
+    font-family:Impact;
+    font-size: 40px;
+    transition: background-color 1.3s ease;
+    transition: font-size 0.7s ease;
+}
+
