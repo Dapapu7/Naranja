@@ -40,3 +40,14 @@ ul{
     background-color: rgb(107, 61, 18);
     color: rgb(235, 188, 117);
 }
+
+.footer__letra a:hover{
+    font-size: 22px;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+}
+
+.boton{
+    background-color: black;
+    font-size: 30px;
+}
