@@ -47,12 +47,23 @@ ul{
     color: white;
 }
 
-.boton, .boton_solo{
+.boton{
     background-color: rgb(199, 112, 30);
     font-size: 30px;
     color: rgb(235, 188, 117);
     font-family:Impact;
     appearance: none;
+    margin-top: 110px;
+    border: none;
+}
+
+.boton_solo{
+    background-color: rgb(199, 112, 30);
+    font-size: 30px;
+    color: rgb(235, 188, 117);
+    font-family:Impact;
+    appearance: none;
+    border: none;
 }
 
 .boton:hover{
@@ -90,4 +101,8 @@ h2{
     font-family: 'Yusei Magic', sans-serif;
     font-size: 40px;
     text-align: center;
+}
+
+.horario{
+    margin-top: 150px;
 }
