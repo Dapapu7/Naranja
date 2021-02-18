@@ -37,17 +37,17 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="index.html">Inicio</a></li>
-            <li><a class="dropdown-item" href="galeria.html">Galeria</a></li>
-            <li><a class="dropdown-item" href="entradas.html">Entradas</a></li>
-            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+            <li><a class="dropdown-item" href="#">Inicio</a></li>
+            <li><a class="dropdown-item" href="#">Galeria</a></li>
+            <li><a class="dropdown-item" href="#">Entradas</a></li>
+            <li><a class="dropdown-item" href="#">Blog</a></li>
+            <li><a class="dropdown-item" href="#">Contacto</a></li>
           </ul>
         </div>
         <div class="enlaces collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mr-auto">
             <li class="nav-item mr-5">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio</a>
             </li>
             <li class="nav-item mr-5">
               <a class="nav-link" href="galeria.html">Galeria</a>
@@ -62,13 +62,6 @@
               <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
           </ul>
-          <div class="navbar-cart">
-            <a href="#" class="icon-btn primary-icon-text icon-text-btn">
-              <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="black" class="bi bi-cart3" viewBox="0 0 16 16">
-               <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg>
-            </a>
-        </div>
         </div>
       </div>
     </nav> 
@@ -77,85 +70,43 @@
     <!-- Creación de título -->
     <div class="container">
       <div class="titulo col-lg-12 col-md-6 col-12">
-        <h2>Bienvenidos a Zooland</h2>
+        <h2>HAZTE SOCIO</h2>
       </div>
-      </div>
+    </div>
     <!-- Cierre de título -->
 
-    <!--Creación del Botón-->
-    <div class="d-grid col-4 mx-auto mt-5 mb-5">
-      <a class="btn btn-primary boton btn-outline-none" href="entradas.html" role="button">Ver Entradas</a>
-    </div>
-    <!--Cierre Botón-->
-
-    <!--Creación del Carrusel-->
+    <!-- Creación del formulario -->
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/leon.jpg" class="d-block w-100" alt="..." height="700">
-              </div>
-              <div class="carousel-item">
-                <img src="images/mononariz.jpg" class="d-block w-100" alt="..." height="700">
-              </div>
-              <div class="carousel-item">
-                <img src="images/jirafa.jpg" class="d-block w-100" alt="..." height="700">
-              </div>
-              <div class="carousel-item">
-                <img src="images/elefante.jpg" class="d-block w-100" alt="..." height="700">
-              </div>
-              <div class="carousel-item">
-                <img src="images/hipopotamo.jpg" class="d-block w-100" alt="..." height="700">
+        <form class="row g-3 was-validated" validate>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltipUsername" class="form-label">Usuario</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                    Porfavor elige un unico y valido usuario.
+                </div>
               </div>
             </div>
-
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </a>
-          </div>
-
-        </div>
-      </div>
+            <div class="col-6 align-items-center was-validated" validate>
+                <div class="col-auto">
+                  <label for="inputPassword6" class="col-form-label">Contraseña</label>
+                </div>
+                <div class="col-auto">
+                  <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                </div>
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text">
+                    Must be 8-20 characters long.
+                  </span>
+                </div>
+              </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Log in</button>
+            </div>
+          </form>
     </div>
-    <!--Cierre Carrusel-->
-
-    <!-- Creación imagen mapa zoo -->
-    <div class="mt-5">
-      <h2>Mapa Zoo</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-3 mt-2">
-          <img src="images/mapazoo.jpg" alt="Mapa Zoo" width="550px">
-        </div>
-        <div class="col-lg-6 col-md-3 mt-2">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, 
-            ex excepturi, dolores nihil vel neque molestiae dolorum culpa adipisci
-            fugit quos libero? Reiciendis est assumenda hic provident voluptates nostrum explicabo?Lorem ipsum, dolo
-            r sit amet consectetur adipisicing elit. Cum vero recusandae, molestias, aliquam rerum, dolores dolore ea labore fug
-            it veniam maiores amet sequi exercitationem obcaecati nihil cumque veritatis voluptatum blanditiis
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, incidunt cum, unde, perspiciatis amet voluptatum 
-            consectetur 
-            inventore nihil pariatur velit vitae magnam provident ut? Iusto odio obcaecati expedita assumenda illo!!
-            it amet consectetur adipisicing elit. Sed, 
-            ex excepturi, dolores nihil vel neque molestiae dolorum culpa adipisci
-            fugit quos libero? Reiciendis est assumenda hic provident voluptates nostrum explicabo?Lorem ipsum, dolo
-            r sit amet consectetur adipisicing elit. Cum vero recusandae, molestias, aliquam rerum, dolores dolore ea labore fug
-            it veniam maiores amet sequi exercitationem obcaecati nihil cumque veritatis voluptatum blanditiis
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, incidunt cu</p>
-        </div>
-      </div>  
-    </div>
-    <!-- Cierre mapa zoo -->
+    <!-- Cierre del formulario -->
 
     <!--Creación del Footer-->
     <footer class="footer align-bottom">

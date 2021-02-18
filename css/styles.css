@@ -12,6 +12,10 @@ body{
     font-size: 26px;
 }
 
+.titulo{
+    margin-top: 150px;
+}
+
 a{
     text-decoration:none ;
     color: rgb(119, 77, 0);
@@ -42,8 +46,6 @@ ul{
 }
 
 .footer__letra a:hover{
-    font-size: 22px;
-    font-family: 'Lobster Two', cursive;
     color: white;
 }
 
@@ -53,7 +55,6 @@ ul{
     color: rgb(235, 188, 117);
     font-family:Impact;
     appearance: none;
-    margin-top: 110px;
     border: none;
 }
 
@@ -105,4 +106,8 @@ h2{
 
 .horario{
     margin-top: 150px;
+}
+
+.pagination{
+    margin-top: 200px;
 }
