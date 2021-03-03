@@ -32,13 +32,23 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img src="images/logozoo.png" class="img-fluid" width="100px" height="100px" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="dropdown">
+          <button class="navbar-toggler btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="index.html">Inicio</a></li>
+            <li><a class="dropdown-item" href="galeria.html">Galeria</a></li>
+            <li><a class="dropdown-item" href="entradas.html">Entradas</a></li>
+            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+            <li><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+            <li><a class="dropdown-item" href="comprar.html">Comprar Entradas</a></li>
+          </ul>
+        </div>
         <div class="enlaces collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mr-auto">
             <li class="nav-item mr-5">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
             </li>
             <li class="nav-item mr-5">
               <a class="nav-link" href="galeria.html">Galeria</a>
@@ -47,7 +57,7 @@
               <a class="nav-link" href="entradas.html">Planea Visita</a>
             </li>
             <li class="nav-item mr-5">
-              <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+              <a class="nav-link" href="blog.html">Blog</a>
             </li>
             <li class="nav-item mr-5">
               <a class="nav-link" href="contacto.html">Contacto</a>
@@ -62,7 +72,7 @@
         </div>
         </div>
       </div>
-    </nav> 
+    </nav>
     <!--Cierre Navbar-->
     <nav aria-label="page-navigation">
       <ul class="pagination justify-content-center">
