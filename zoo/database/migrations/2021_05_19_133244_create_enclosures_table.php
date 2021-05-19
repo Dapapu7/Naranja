@@ -14,7 +14,7 @@ class CreateEnclosuresTable extends Migration
     public function up()
     {
         Schema::create('enclosures', function (Blueprint $table) {
-            $table->id('id_enclosure');
+            $table->bigInteger('id_enclosure')->primary()->autoIncrement();
             $table->string('name');
             $table->unsignedInteger('capacity');
             $table->longText('description')->nullable();
