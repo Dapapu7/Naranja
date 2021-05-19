@@ -19,7 +19,11 @@ class CreateTicketsTable extends Migration
             $table->unsignedDecimal('price');
             $table->date('date');
             $table->string('cif');
+
             $table->unsignedBigInteger('clients_id');
+            $table->foreign('clients_id')
+            ->references('id_client')
+            ->on('clients')
         });
     }
 

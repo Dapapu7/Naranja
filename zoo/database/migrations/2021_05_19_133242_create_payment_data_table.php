@@ -14,12 +14,16 @@ class CreatePaymentDataTable extends Migration
     public function up()
     {
         Schema::create('payment_data', function (Blueprint $table) {
-            $table->id();
+            $table->id('id_paymentdata');
             $table->string('credit_card');
             $table->date('expiration_date');
             $table->string('secret_number');
             $table->longText('payment_method');
+
             $table->unsignedBigInteger('clients_id');
+            $table->foreign('clients_id')
+            ->references('id_client')
+            ->on('clients')
         });
     }
 
