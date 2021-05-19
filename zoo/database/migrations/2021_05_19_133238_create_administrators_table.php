@@ -14,16 +14,12 @@ class CreateAdministratorsTable extends Migration
     public function up()
     {
         Schema::create('administrators', function (Blueprint $table) {
-            $table->bigInteger('id_administrator')->primary()->autoIncrement();
+            $table->id();
             $table->string('first_name');
             $table->string('last_name');
             $table->string('phone_number');
             $table->string('dni');
-
             $table->unsignedBigInteger('users_id');
-            $table->foreign('users_id')
-                ->references('id')
-                ->on('users');
         });
     }
 

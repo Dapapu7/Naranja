@@ -22,8 +22,8 @@ class CreateTicketsTable extends Migration
 
             $table->unsignedBigInteger('clients_id');
             $table->foreign('clients_id')
-            ->references('id_client')
-            ->on('clients');
+                  ->references('id_client')
+                  ->on('clients');
         });
     }
 

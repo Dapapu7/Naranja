@@ -20,11 +20,9 @@ class CreateAnimalsTable extends Migration
             $table->string('family');
             $table->longText('description')->nullable();
             $table->longText('photo')->nullable();
-
+        
             $table->unsignedBigInteger('enclosures_id');
-            $table->foreign('enclosures_id')
-            ->references('id_enclosure')
-            ->on('enclosures');
+            $table->foreign('enclosures')
         });
     }
 
