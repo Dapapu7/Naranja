@@ -14,7 +14,7 @@ class CreatePaymentDataTable extends Migration
     public function up()
     {
         Schema::create('payment_data', function (Blueprint $table) {
-            $table->id('id_paymentdata');
+            $table->bigInteger('id_paymentdata')->primary()->autoIncrement();
             $table->string('credit_card');
             $table->date('expiration_date');
             $table->string('secret_number');
@@ -23,7 +23,7 @@ class CreatePaymentDataTable extends Migration
             $table->unsignedBigInteger('clients_id');
             $table->foreign('clients_id')
             ->references('id_client')
-            ->on('clients')
+            ->on('clients');
         });
     }
 
